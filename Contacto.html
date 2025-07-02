@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+    <link rel="stylesheet" href="style_contacto.css">
+    <link rel="stylesheet" href="style_general.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Biografia.html">Biografía</a></li>
+                <li><a href="Estudios.html">Estudios</a></li>
+                <li><a href="Contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-contacto">
+        <section class="introduccion-contacto">
+            <p class="texto-introductorio">
+                ¡Gracias por visitar mi sitio! Si deseas conocer más sobre mi trabajo, tienes preguntas o simplemente
+                quieres conectarte, estaré encantado de escucharte. Completa el formulario o utiliza cualquiera de mis
+                datos de contacto directo que encontrarás a continuación.
+            </p>
+        </section>
+
+        <div class="contenedor-flex-contacto">
+            <!-- Sección de Información de Contacto - Corregida -->
+            <section class="informacion-contacto">
+                <div class="tarjeta-contacto">
+                    <h2>Datos de Contacto</h2> 
+                    <div class="item-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/128/7524/7524766.png" alt="Teléfono fijo"
+                            class="icono-contacto">
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p><a href="tel:+59847772383"> 4777 2383</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/128/181/181516.png" alt="Teléfono móvil"
+                            class="icono-contacto">
+                        <div>
+                            <h3>Móvil</h3>
+                            <p><a href="tel:+59892357362">092 357 362</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4314/4314565.png" alt="Correo electrónico"
+                            class="icono-contacto">
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:rodrigosuarezolivera@gmail.com">rodrigosuarezolivera@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/128/181/181508.png" alt="Ubicación"
+                            class="icono-contacto">
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Maldonado 1223, Montevideo, Uruguay</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección del Formulario -->
+            <section class="formulario-contacto">
+                <h2>Envíame un mensaje</h2>
+                <form action="#" method="post" class="formulario">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre completo</label>
+                        <div class="campo-texto">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">Correo electrónico</label>
+                        <div class="campo-texto">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="asunto">Asunto</label>
+                        <div class="campo-texto">
+                            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <div class="campo-texto">
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required
+                                rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Proyecto: Recorrido Académico © 2025 de Rodrigo Suarez</p>
+    </footer>
+</body>
+
+</html>

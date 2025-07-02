@@ -1,0 +1,170 @@
+
+/* Contenedor principal que envuelve toda la sección de contacto */
+.contenedor-contacto {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Texto de introducción */
+.texto-introductorio {
+    color: #fefeff;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.contenedor-flex-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.informacion-contacto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.tarjeta-contacto {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.tarjeta-contacto h2 {
+    color: #00b0f0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.item-contacto:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.icono-contacto {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.item-contacto h3 {
+    color: #00b0f0;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.item-contacto p, 
+.item-contacto a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.item-contacto a:hover {
+    color: #1abc9c;
+}
+
+.formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.formulario-contacto h2 {
+    color: #00b0f0;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.grupo-formulario {
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campo-texto {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 2px rgba(26, 188, 156, 0.2);
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.boton-enviar {
+    display: block;
+    width: calc(100% - 20px);
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.boton-enviar:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+

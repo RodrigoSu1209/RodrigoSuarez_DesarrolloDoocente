@@ -1,0 +1,191 @@
+/* style_estudios.css */
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px 30px;
+    background-color: rgba(23, 24, 23, 0.7);
+    /* El último valor (0.7) controla la opacidad (0 a 1) */
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: #fefeff;
+    font-family: 'Inter', sans-serif;
+}
+
+
+h1,
+h2 {
+    color: #00b0f056;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Div de Biografía para imágenes de los pueblos*/
+.div {
+    justify-content: space-between;
+    /* Separa los divs a los extremos */
+    gap: 30px;
+    /* Espacio entre los divs (opcional) */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    background-color: rgba(23, 24, 23, 0.7);
+    /* El último valor (0.7) controla la opacidad (0 a 1) */
+}
+
+.centro_arriba {
+    border: 0px;
+    /*Borde temporal para visualizarlos */
+    min-height: 100px;
+    /* Altura mínima para verlos mejor */
+    padding: 10px;
+    /* Espacio interno*/
+    border-radius: 8px;
+    padding: 3%;
+    margin-bottom: 50px;
+}
+
+.Abajo {
+    display: flex;
+    /* Activa Flexbox */
+    gap: 20px;
+    /* Espacio entre elementos */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos pasen a otra línea si no caben */
+}
+
+.Gomensoro,
+.Bella_unión,
+.Constitución {
+    flex: 1;
+    /* Cada div ocupa el mismo espacio */
+    min-width: 250px;
+    /* Ancho mínimo para evitar que se compriman demasiado */
+    text-align: center;
+    /* Centra el texto y la imagen */
+    border-radius: 70%;
+    border: 10px solid rgb(62, 55, 55);
+    /* Borde negro */
+}
+
+/* Contenedor principal */
+.video_Estudios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sección izquierda con video redondo */
+.izquierda {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid rgb(62, 55, 55);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.izquierda video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Sección derecha con texto */
+.derecha {
+    flex: 1;
+    padding: 20px;
+}
+
+/*Página Liceo, Escuela y Terciario*/
+.todo_liceo,
+.todo_escuela,
+.todo_terciario {
+    display: flex;
+    flex-direction: column;
+    /* Apila los contenedores verticalmente */
+    gap: 40px;
+    /* Espacio vertical entre los contenedores hijos */
+    margin: 0 auto;
+    /* Centra el contenedor principal */
+    padding: 30px;
+    /* Espacio interno */
+}
+
+.contenedor_Liceo_1,
+.contenedor_liceo_2,
+.contenedor_liceo_3,
+.Escuela_15,
+.Escuela_7,
+.Profesorado,
+.CERP_del_litoral {
+    display: flex;
+    gap: 20px;
+    /* Espacio entre los elementos */
+}
+
+/*sección de descripción página escuela*/
+.descripción {
+    padding: 5%;
+}
+
+
+/*CSS para los contenderores con imágenes*/
+.Liceo,
+.Porta,
+.LICEO,
+.imagen_escu15,
+.imagen_escu7,
+.img_historia_cerp,
+.img_historia_cerp,
+.img_profesorado {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente la imagen */
+    align-items: center;
+    /* Centra verticalmente la imagen */
+    flex-direction: column;
+    /*Si hay más de 1 imagen, coloca una debajo de la otra*/
+}
+
+
+/*CSS para los contenderores con texto*/
+/*Esto es del liceo*/
+.creacion_liceo,
+.Porta_Historia,
+.edificio_liceal,
+.Direccion_liceo,
+/*Esto es de la escuela*/
+.escuela_15,
+.escuela_7,
+/*Esto es de terciario*/
+.Historia,
+.profesorado_informatica {
+    flex: 1;
+    /* Hace los divs ocupen el mismo espacio */
+}
